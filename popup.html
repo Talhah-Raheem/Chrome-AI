@@ -6,13 +6,23 @@
         body {
             font-family: Arial, sans-serif;
             padding: 10px;
+            width: 300px;
         }
         h1 {
-            font-size: 16px;
+            font-size: 18px;
             margin-bottom: 10px;
         }
         .question {
-            margin-bottom: 10px;
+            margin-bottom: 15px;
+        }
+        textarea {
+            width: 100%;
+            height: 50px;
+            margin-top: 5px;
+        }
+        button {
+            margin-top: 10px;
+            padding: 8px 12px;
         }
 
     </style>
@@ -20,10 +30,27 @@
 <body>
     <h1>WISE Reflection</h1>
 
-    <div class="question">1. What is the purpose of this task?</div>
-    <div class="question">2. How did you arrive at this solution?</div>
-    <div class="question">3. What would you do differently?</div>
-    <div class="question">4. What did you learn from this process?</div>
+    <div class="question">
+        <label>1. What is the purpose of this task?<label>
+        <textarea id="q1"></textarea>
+    </div>
+
+    <div class="question">
+        <label>2. How did you arrive at this solution?</label>
+        <textarea id="q2"></textarea>
+    </div>
+
+    <div class="question">
+        <label>3. What would you do differently?</label>
+        <textarea id="q3"></textarea>
+    </div>
+
+    <div class="question">
+        <label>4. What did you learn from this process?</label>
+        <textarea id="q4"></textarea>
+    </div>
+
+    <button id="saveBtn">Save Refelction</button>
 
     <script src="popup.js"></script>
 </body>
