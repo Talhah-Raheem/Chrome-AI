@@ -14,5 +14,5 @@
     },
 
     "permissions": ["storage"],
-    "host_permisssions": ["https://api.openai.com/"]
+    "host_permissions": ["https://api.openai.com/"]
 }
